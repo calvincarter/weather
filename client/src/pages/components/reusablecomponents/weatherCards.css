@@ -1,0 +1,12 @@
+/* Using 'em' units for text that should scale with its container */
+.temp-card, .precip-card, .wind-card, .weathercondition-card, .cloud-card, .humidity-card {
+    color: white;
+    font-size: 1.2em; /* 20% larger than the container's font size */
+  }
+  
+  @media (max-width: 768px) {
+    .temp-card, .precip-card, .wind-card, .weathercondition-card, .cloud-card, .humidity-card {
+      font-size: 1em; /* Adjust size for smaller screens */
+    }
+  }
+  

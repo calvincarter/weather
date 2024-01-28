@@ -1,0 +1,35 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cinzel&display=swap');
+
+
+/* div .main-content-home {
+    background: url(/client/build/static/media/earth.jpg);
+} */
+
+
+
+.weather-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.cityname-display {
+    color: white;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.future-forecast {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}

@@ -1,0 +1,42 @@
+.card {
+  background-color: rgba(207, 216, 220, 0.25);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateX(2deg);
+
+  /* containment */
+  overflow: hidden;
+  word-wrap: break-word;
+
+  /* Size adjustments */
+  width: 60%; /* Set a specific width */
+  height: 300px; /* Set a specific height */
+  padding: 15px; /* Add some padding for content */
+  margin: 15px 15px 30px 15px;
+  box-sizing: border-box;
+
+  /* constraints */
+  max-height: 300px;
+  max-width: 500px;
+
+  /* Hover effect */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  font-size: 1rem;
+
+  @media (max-width: 768px) {
+    .card {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.card:hover {
+  background-color: rgba(207, 216, 220, 1); /* Make it solid */
+  transform: perspective(1000px) rotateX(4deg) translateY(-5px); /* Move slightly up */
+}
+
+
+.card h3 {
+  font-size: 1.5vw; /* Adjust the value as needed */
+}
